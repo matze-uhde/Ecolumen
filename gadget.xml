@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs
+        title="My Custom Gadget"
+        description="Displays data from Jira"
+        author="Your Name"
+        author_email="your-email@example.com">
+        <Optional feature="authentication" />
+    </ModulePrefs>
+
+    <Content type="html">
+        <![CDATA[
+            <script>
+                function fetchData() {
+                    var gadgetUrl = "http://gadget.projektfokus.ch:3000/gadget";
+                    gadgets.io.makeRequest(gadgetUrl, function(response) {
+                        document.getElementById("data").innerHTML = response.text;
+                    });
+                }
+                gadgets.util.registerOnLoadHandler(fetchData);
+            </script>
+            <div id="data">Loading...</div>
+        ]]>
+    </Content>
+</Module>

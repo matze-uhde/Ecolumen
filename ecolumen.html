@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecolumen</title>
+    <script src="https://connect-cdn.atl-paas.net/all.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        .header {
+            background-color: #0052CC;
+            color: white;
+            height: 60px;
+        }
+        .body {
+            background-color: #f4f5f7;
+            height: 100%;
+        }
+        .footer {
+            background-color: #172B4D;
+            color: white;
+            height: 40px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="header">
+            <td>
+                <h1>Ecolumen Integration</h1>
+            </td>
+        </tr>
+        <tr class="body">
+            <td>
+                <div class="content">
+                    <h2>Welcome to Ecolumen</h2>
+                    <p>This space will be used to display Ecolumen data and functionality.</p>
+                    <div id="jira-info"></div>
+                </div>
+            </td>
+        </tr>
+        <tr class="footer">
+            <td>
+                <p>© 2024 Projektfokus. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        AP.context.getContext(function(context) {
+            var jiraInfo = document.getElementById('jira-info');
+            if (context && context.jira) {
+                jiraInfo.innerHTML = '<p>Connected to Jira instance: ' + context.jira.baseUrl + '</p>';
+            } else {
+                jiraInfo.innerHTML = '<p>Unable to retrieve Jira context.</p>';
+            }
+        });
+
+        // Resize the iFrame to fit the content
+        AP.resize("100%", "400");
+    </script>
+</body>
+</html>

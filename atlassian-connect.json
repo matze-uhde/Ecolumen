@@ -1,0 +1,27 @@
+{
+  "name": "Ecolumen",
+  "description": "Ecolumen Integration in Jira",
+  "key": "com.projektfokus.ecolumen",
+  "baseUrl": "https://gadget.projektfokus.ch",
+  "vendor": {
+    "name": "Projektfokus",
+    "url": "https://projektfokus.ch"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "apiVersion": 1,
+  "modules": {
+    "generalPages": [
+      {
+        "key": "ecolumen-top-nav-link",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Ecolumen"
+        },
+        "url": "/ecolumen.html"
+      }
+    ]
+  },
+  "scopes": ["read", "write"]
+}

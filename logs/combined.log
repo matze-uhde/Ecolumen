@@ -1,0 +1,10 @@
+{"level":"info","message":"Gadget server listening at http://localhost:3000","timestamp":"2024-08-23T14:16:34.843Z"}
+{"level":"info","message":"Gadget server listening at http://localhost:3000","timestamp":"2024-08-23T14:20:16.502Z"}
+{"level":"info","message":"Gadget server listening at http://localhost:3000","timestamp":"2024-08-23T14:21:38.442Z"}
+{"level":"info","message":"Gadget server listening at http://localhost:3000","timestamp":"2024-08-23T14:32:54.860Z"}
+{"level":"info","message":"Gadget server listening at http://localhost:3000","timestamp":"2024-08-23T14:34:25.213Z"}
+{"level":"info","message":"Gadget server listening at http://localhost:3000","timestamp":"2024-08-23T14:34:45.652Z"}
+{"body":{},"headers":{"host":"65.21.188.204:3000"},"level":"info","message":"Incoming request: GET /","timestamp":"2024-08-23T16:21:28.211Z"}
+{"body":{},"headers":{"accept":"*/*","accept-encoding":"gzip","host":"65.21.188.204:3000","user-agent":"Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"},"level":"info","message":"Incoming request: GET /","timestamp":"2024-08-23T16:21:36.352Z"}
+{"body":{},"headers":{"host":"65.21.188.204:3000"},"level":"info","message":"Incoming request: GET /","timestamp":"2024-08-23T16:31:40.184Z"}
+{"body":{},"headers":{"accept":"*/*","accept-encoding":"gzip","host":"65.21.188.204:3000","user-agent":"Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"},"level":"info","message":"Incoming request: GET /","timestamp":"2024-08-23T16:31:49.046Z"}
